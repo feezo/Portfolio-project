@@ -26,7 +26,7 @@ body {
 .container div:nth-child(6) {
 margin:20px 0 auto -50px ;
 color: #7b7d7d;
-background: red;
+/*background: red;-->*/
 }
 
 /*.container div:nth-child(7) {
@@ -85,7 +85,7 @@ background: red;
   margin: 0 auto;
 }
 
-.sidebar section {
+.sidebar aside {
   grid-row: span 2;
   background: #02b3e4;
 }
@@ -109,7 +109,7 @@ background: red;
   margin: 0 auto;
 }
 
-.sidebar-2 section {
+.sidebar-2 aside {
   grid-row: span 2;
   background: #2d3c49;
 }
@@ -133,7 +133,7 @@ background: red;
   margin: 0 auto;
 }
 
-.sidebar-3 section {
+.sidebar-3 aside {
   grid-row: span 2;
   background:  #7d97ad;
 }
@@ -150,28 +150,23 @@ grid-area: ft
   display: flex;
   flex-flow: nowrap;
   min-width: 70vw;
-  margin: -20px auto 50px -50px;
-  padding: 50px 20px 100px auto;
+  margin: -50px auto 20px -50px;
+  padding: 20px 20px 50px 0;
   justify-content: space-around;
-  background: blue;
+  /*background: blue;*/
   text-align: center;
   align-items:center;
   box-sizing: border-box;
 }
 
-img1 {
-  margin: 0 auto;
-  padding: 15px;
+.img1 {
+  flex: 1;
+}
 
+.img2 {
+  flex: 1;
   }
 
-  img2 {
-    margin: 5px;
-    padding: 5px;
-  }
-
-  img3 {
-    margin: 5px ;
-    padding: 5px;
-    border: 1px solid red;
+.img3 {
+  flex: 1;
   }
