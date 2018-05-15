@@ -152,7 +152,7 @@ grid-area: ft
   min-width: 70vw;
   margin: -50px auto 20px -50px;
   padding: 20px 20px 50px 0;
-  justify-content: space-around;
+  justify-content: space-between;
   /*background: blue;*/
   text-align: center;
   align-items:center;
@@ -169,4 +169,12 @@ grid-area: ft
 
 .img3 {
   flex: 1;
+  }
+
+  @media screen and (max-width: 850px) {
+  .container {
+    width: 850px;
+    margin-right: auto;
+    margin-left: auto;
+    }
   }
