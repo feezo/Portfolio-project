@@ -62,8 +62,8 @@ color: #7b7d7d;
 .mainpage {
   background-image: url(images/image2-min.jpg);
   background-size: cover;
-  margin-left: -50px;
   background-repeat: no-repeat;
+  background-position: center center;
 }
 
 .sidebar {
@@ -148,8 +148,8 @@ grid-area: ft
 
 .footer {
   display: flex;
-  flex-flow: nowrap;
-  min-width: 70vw;
+  flex-flow: wrap;
+  /*min-width: 70vw;*/
   margin: -50px auto 20px -50px;
   padding: 20px 20px 50px 0;
   justify-content: space-between;
@@ -171,10 +171,32 @@ grid-area: ft
   flex: 1;
   }
 
-  @media screen and (max-width: 850px) {
-  .container {
-    width: 850px;
-    margin-right: auto;
-    margin-left: auto;
-    }
+  @media screen and (min-width: 321px) {
+   .mainpage {
+     background-image: url(images/image2-min.jpg);
+     background-size: contain;
+     width: 100%;
+     background-position: center center;
+     background-repeat: no-repeat;
+   }
   }
+
+ @media only screen and (max-width: 320px) {
+  .mainpage {
+  background-image: url(images/image1-min.jpg);
+  background-size: contain;
+  width: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+ }
+}
+
+/*@media only screen and (min-width: 800px) {
+  .mainpage {
+    background-image: url(images/image2-min.jpg);
+    background-size: cover;
+    width: 100%;
+    background-position: center left;
+    background-repeat: no-repeat;
+  }
+}*/
